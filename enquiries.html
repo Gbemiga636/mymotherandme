@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enquiries — My Mother &amp; Me</title>
+  <meta name="description" content="Questions about My Mother & Me — The Legacy of Connection? Send an enquiry and we’ll respond as soon as possible." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html" aria-label="Home">
+          <img class="brand-photo" src="assets/mother.png" alt="Mother portrait" />
+        </a>
+
+        <div class="nav-links" role="navigation" aria-label="Site">
+          <a href="index.html">Home</a>
+          <a href="tickets.html">Tickets</a>
+          <a href="enquiries.html">Enquiries</a>
+        </div>
+
+        <a class="btn btn-primary header-cta" href="tickets.html" aria-label="Reserve Your Seat">
+          <i class="fa-solid fa-ticket" aria-hidden="true"></i>
+          <span class="btn-label">Reserve Your Seat</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <div class="pill" aria-label="Support">
+          <i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i>
+          For questions, partnerships, or event support.
+        </div>
+
+        <div class="hero-grid" style="margin-top:14px;">
+          <div class="glass pad-lg">
+            <div class="kicker"><i class="fa-solid fa-gem" aria-hidden="true"></i> Enquiries</div>
+            <h1>We’d Love to Hear From You</h1>
+            <p class="lead">Questions about the experience? We’re here.</p>
+            <p class="muted" style="margin:0 0 16px;">Send your message below and we’ll respond as soon as possible.</p>
+
+            <div class="event-meta glass" aria-label="Event details">
+              <div class="meta-item">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                <div>
+                  <div class="meta-label">Date</div>
+                  <div class="meta-value">May 2, 2026</div>
+                </div>
+              </div>
+              <div class="meta-item">
+                <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                <div>
+                  <div class="meta-label">Time</div>
+                  <div class="meta-value">6:00 PM – 10:00 PM</div>
+                </div>
+              </div>
+              <div class="meta-item">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <div>
+                  <div class="meta-label">Location</div>
+                  <div class="meta-value">Atlanta, Georgia</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider" role="separator" aria-hidden="true"></div>
+
+            <p class="muted" style="margin:0;">If your enquiry is about tickets, you can purchase directly on Eventbrite from the tickets page.</p>
+
+            <div class="cta-row" style="margin-top:14px;">
+              <a class="btn btn-ghost" href="tickets.html"><i class="fa-solid fa-ticket" aria-hidden="true"></i> Tickets</a>
+              <a class="btn btn-ghost" href="index.html"><i class="fa-solid fa-house" aria-hidden="true"></i> Homepage</a>
+            </div>
+          </div>
+
+          <div class="glass pad-lg">
+            <form class="contact-form" action="https://formspree.io/f/mdaaogqp" method="POST" data-formspree>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="name">Full Name</label>
+                  <input class="input" id="name" name="name" autocomplete="name" required />
+                </div>
+
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input class="input" id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone (Optional)</label>
+                  <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" />
+                </div>
+
+                <div class="field field-full">
+                  <label for="message">Message</label>
+                  <textarea class="textarea" id="message" name="message" required></textarea>
+                </div>
+              </div>
+
+              <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+              <div class="cta-row" style="margin-top:14px;">
+                <button class="btn btn-primary full" type="submit">
+                  <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                  <span class="btn-label">Send Enquiry</span>
+                </button>
+              </div>
+
+              <p class="form-status" role="status" aria-live="polite"></p>
+              <p class="fineprint" style="margin-top:10px;"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i> This form is powered by Formspree.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">My Mother &amp; Me</span>
+          </div>
+          <div class="muted" style="font-size:13px;">&copy; <span data-year></span> BoomsyCreations. All rights reserved.</div>
+          <div class="presented-by" style="margin-top:10px;display:flex;align-items:center;gap:8px;">
+            <span class="muted" style="font-size:12px;">Presented by</span>
+            <img src="assets/boomsy-logo.png" alt="BoomsyCreations logo" style="height:32px;width:auto;vertical-align:middle;filter:drop-shadow(0 2px 8px rgba(35,21,13,.10));background:rgba(255,255,255,.7);border-radius:8px;padding:2px 8px;" />
+          </div>
+        </div>
+
+        <div class="cta-row" style="margin:0;">
+          <a class="btn btn-ghost" href="#main"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i> Back to top</a>
+          <a class="btn btn-ghost" href="tickets.html"><i class="fa-solid fa-ticket" aria-hidden="true"></i> Tickets</a>
+          <a class="btn btn-primary" href="tickets.html"><i class="fa-solid fa-ticket" aria-hidden="true"></i> Reserve Your Seat</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
