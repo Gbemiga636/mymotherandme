@@ -37,7 +37,7 @@
         form.reset();
         if (statusEl) {
           statusEl.classList.add('is-success');
-          statusEl.textContent = 'Thank you — your enquiry has been sent. We’ll reply as soon as possible.';
+          statusEl.textContent = 'Thank you — your inquiry has been sent. We’ll reply as soon as possible.';
         }
         return;
       }
